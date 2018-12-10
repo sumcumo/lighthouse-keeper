@@ -5,7 +5,7 @@ This tool uses Google’s [Lighthouse](https://github.com/GoogleChrome/lighthous
 ## Installation
 
 ```bash
-npm install --save-dev lighthouse-keeper
+npm install --save-dev @sumcumo/lighthouse-keeper
 ```
 
 ### Google Chrome
