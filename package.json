@@ -1,7 +1,7 @@
 {
   "name": "@sum.cumo/lighthouse-keeper",
   "version": "1.0.1",
-  "description": "",
+  "description": "Lighthouse Keeper allows to run specific Lighthouse audits on a set of URLs.",
   "main": "lib/main.js",
   "bin": {
     "lighthouse-keeper": "./bin/lighthouse-keeper.js"
