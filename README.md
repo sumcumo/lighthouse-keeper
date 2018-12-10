@@ -1,6 +1,6 @@
 # Lighthouse Keeper
 
-This tool uses Google’s [Lighthouse](https://github.com/GoogleChrome/lighthouse) under the hood and gives the possibility to scan a list of URLs and get the result of specific audits.
+Lighthouse Keeper allows to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
 
 ## Installation
 
@@ -95,7 +95,7 @@ If you want to see a list of all available audits, run
 lighthouse-keeper --url https://www.example.com/ --showaudits
 ```
 
-The `url` is actually irrelevant for the list, but needed for running Lighthouse to parse the response in order to get the list.
+The `url` is actually irrelevant for the list, but needed for running Lighthouse to parse the response.
 
 Please have in mind that there are audits like `screenshot-thumbnails` which can’t be validated. These audits are marked with a `⚠` in the audits list and with `(?)` in the result.
 
