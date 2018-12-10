@@ -1,0 +1,43 @@
+{
+  "name": "lighthouse-keeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "bin": {
+    "lighthouse-keeper": "./bin/lighthouse-keeper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sumcumo/lighthouse-keeper.git"
+  },
+  "homepage": "https://github.com/sumcumo/lighthouse-keeper",
+  "scripts": {
+    "release": "standard-version",
+    "lint": "eslint --ext .js --fix --cache lib",
+    "build": "rollup -c"
+  },
+  "author": "sum.cumo GmbH",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.8.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "husky": "1.1.2",
+    "prettier": "1.14.3",
+    "prettier-eslint": "8.8.2",
+    "rollup": "0.66.6",
+    "standard-version": "4.4.0"
+  },
+  "dependencies": {
+    "chalk": "2.4.1",
+    "chrome-launcher": "0.10.5",
+    "easy-table": "1.1.1",
+    "figures": "2.0.0",
+    "lighthouse": "3.2.1",
+    "prettyjson": "1.2.1",
+    "yargs": "12.0.2"
+  }
+}

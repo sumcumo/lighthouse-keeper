@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "vue": "never"
+    }],
+    "import/no-extraneous-dependencies": "off",
+    "semi": ["error", "never"],
+    "no-console": [
+      "error", { "allow": ["info", "warn", "error"] }
+    ],
+    "no-unused-vars": ["error", {
+      "argsIgnorePattern": "^_"
+    }]
+  },
+  "env": {
+    "node": true
+  }
+}
