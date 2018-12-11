@@ -1,6 +1,6 @@
 # Lighthouse Keeper
 
-Lighthouse Keeper allows to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
+Lighthouse Keeper makes it easier to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install --save-dev @sum.cumo/lighthouse-keeper
 
 ### Google Chrome
 
-You need a [Chrome installation](https://developers.google.com/web/updates/2017/04/headless-chrome) in order to be able to execute lighthouse.
+You need a [Chrome installation](https://developers.google.com/web/updates/2017/04/headless-chrome) in order to be able to use Lighthouse.
 
 ## Usage
 
@@ -26,7 +26,7 @@ These are the possible options for the configuration file:
 
 | Option        | Description   | Default |
 | ------------- | ------------- | ------------- |
-| urls | array of urls to scan (max. 6) | `[]` |
+| urls | array of URLs to scan | `[]` |
 | extendedInfo | display extended info of the audit | `false` by default. If the audit is not satisfied extendInfo turns true |
 | allAudits| indicates if all audits should be evaluated | `false` |
 | onlyAudits| array of audit keys to evaluate (see below) | `[]` |
@@ -60,13 +60,15 @@ These are the possible options for the configuration file:
 }
 ```
 
+([Reasoning behind this sample config.](https://meiert.com/en/blog/lighthouse-config/))
+
 ### Without Config File
 
 ```bash
 lighthouse-keeper --url https://www.example.com --audits accesskeys,uses-http2 --scores seo:90,best-practices:10
 ```
 
-These are the possible options for the CLI.
+These are the possible options for the CLI:
 
 | Option        | Description   | Mandatory |
 | ------------- | ------------- | ------------- |
@@ -75,7 +77,7 @@ These are the possible options for the CLI.
 | scores| list of minimum scores per category to obtain (see below) | no |
 | showaudits| only show the available audits | no |
 
-All list entries can be divided by a comma.
+List entries must be separated by comma.
 
 ### Categories
 
