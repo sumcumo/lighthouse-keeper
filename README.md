@@ -26,7 +26,7 @@ These are the possible options for the configuration file:
 
 | Option        | Description   | Default |
 | ------------- | ------------- | ------------- |
-| urls | array of urls to scan (max. 6) | `[]` |
+| urls | array of URLs to scan | `[]` |
 | extendedInfo | display extended info of the audit | `false` by default. If the audit is not satisfied extendInfo turns true |
 | allAudits| indicates if all audits should be evaluated | `false` |
 | onlyAudits| array of audit keys to evaluate (see below) | `[]` |
