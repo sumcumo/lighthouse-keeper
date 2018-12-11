@@ -72,7 +72,7 @@ These are the possible options for the CLI:
 
 | Option        | Description   | Mandatory |
 | ------------- | ------------- | ------------- |
-| url | the url to scan | yes |
+| url | the URL to scan | yes |
 | audits| list of audits that should be evaluated (see below) | no |
 | scores| list of minimum scores per category to obtain (see below) | no |
 | showaudits| only show the available audits | no |
