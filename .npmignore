@@ -1,0 +1,13 @@
+lib
+.eslintcache
+node_modules/
+.editorconfig  
+.eslintrc      
+.gitignore     
+.nvmrc
+.eslintignore  
+.gitattributes 
+.huskyrc       
+commitlint.config.js
+example-config.json
+rollup.config.js
