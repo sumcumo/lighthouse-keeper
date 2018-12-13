@@ -45,7 +45,7 @@ These are the possible options for the configuration file:
     "best-practices": 90,
     "seo": 80
   },
-  "onlyCategories": [
+  "onlyAudits": [
     "performance",
     "accessibility",
     "best-practices",
