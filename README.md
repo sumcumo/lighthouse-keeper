@@ -1,5 +1,9 @@
 # Lighthouse Keeper
 
+[![license](https://img.shields.io/github/license/sumcumo/lighthouse-keeper.svg)](https://github.com/sumcumo/lighthouse-keeper/blob/master/LICENSE.md)
+[![GitHub tag](https://img.shields.io/github/tag/sumcumo/lighthouse-keeper.svg)](https://github.com/sumcumo/lighthouse-keeper)
+[![GitHub issues](https://img.shields.io/github/issues/sumcumo/lighthouse-keeper.svg)](https://github.com/sumcumo/lighthouse-keeper/issues)
+
 Lighthouse Keeper makes it easier to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
 
 ## Installation
