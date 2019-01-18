@@ -8,16 +8,10 @@
     "best-practices": 90,
     "seo": 80
   },
-  "onlyCategories": [
-    "performance",
-    "accessibility",
-    "best-practices",
-    "seo"
-  ],
   "skipAudits": [
-    "byte-efficiency/uses-responsive-images",
-    "byte-efficiency/uses-webp-images",
-    "seo/meta-description"
+    "uses-responsive-images",
+    "uses-webp-images",
+    "meta-description"
   ],
   "extendedInfo": true
 }
