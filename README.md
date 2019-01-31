@@ -26,16 +26,31 @@ These are the possible options for the configuration file:
 
 | Option        | Description   | Default |
 | ------------- | ------------- | ------------- |
+| extends | name of a predefined set of configurations | optional |
 | urls | array of URLs to scan | `[]` |
 | extendedInfo | display extended info of the audit | `false` by default. If the audit is not satisfied extendInfo turns true |
 | allAudits| indicates if all audits should be evaluated | `false` |
 | onlyAudits| array of audit keys to evaluate (see below) | `[]` |
 | scores| object of minimum scores per category (see below) to obtain | `{}` |
 
+#### Recommended Options
+
+There is a predefined set of options called 'recommended. This looks like this:
+
+```json
+skipAudits: [
+  "uses-webp-images",
+  "hreflang",
+  "webapp-install-banner",
+  "without-javascript",
+]
+```
+
 #### Example
 
 ```json
 {
+  "extends": "recommended",
   "urls": [
     "https://www.example.com/"
   ],
