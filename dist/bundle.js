@@ -1,5 +1,14 @@
 'use strict';
 
+var recommendedOptions = {
+  skipAudits: [
+    'uses-webp-images',
+    'hreflang',
+    'webapp-install-banner',
+    'without-javascript',
+  ],
+};
+
 const fs = require('fs');
 const { argv } = require('yargs');
 
@@ -8,7 +17,18 @@ const getConfig = () => {
   let options = {};
   if (configFile) {
     const data = fs.readFileSync(configFile, 'utf8');
-    options = JSON.parse(data);
+    const parsedOptions = JSON.parse(data);
+
+    options = {
+      ...parsedOptions,
+    };
+
+    if (parsedOptions.extends === 'recommended') {
+      options = {
+        ...recommendedOptions,
+        ...options,
+      };
+    }
   } else {
     const { url } = argv;
     options.urls = [url];

@@ -1,4 +1,5 @@
 {
+  "extends": "recommended",
   "urls": [
     "https://www.example.com/"
   ],
