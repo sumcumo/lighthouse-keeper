@@ -38,6 +38,11 @@ const getConfig = () => {
       options.onlyAudits = audits.split(',');
     }
 
+    const { skip } = argv;
+    if (skip) {
+      options.skipAudits = skip.split(',');
+    }
+
     const { scores } = argv;
     if (scores) {
       options.scores = {};
@@ -67,6 +72,7 @@ const prepareOptions = () => {
     extendedInfo: false,
     allAudits: false,
     onlyAudits: [],
+    skipAudits: [],
   };
 
   const keys = Object.keys(preparedOptions);
@@ -83,14 +89,17 @@ const prepareOptions = () => {
 
 const filterAudits = (category, options) => {
   const filteredAudits = category.auditRefs.filter((audit) => {
-    if (!options.allAudits && options.onlyAudits.length > 0) {
-      if (options.onlyAudits.includes(audit.id)) {
-        return true
+    let result = true;
+    if (!options.allAudits) {
+      if (options.onlyAudits.length > 0 && !options.onlyAudits.includes(audit.id)) {
+        result = false;
       }
-      return false
+      if (options.skipAudits.includes(audit.id)) {
+        result = false;
+      }
     }
 
-    return true
+    return result
   });
 
   return filteredAudits

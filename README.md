@@ -31,6 +31,7 @@ These are the possible options for the configuration file:
 | extendedInfo | display extended info of the audit | `false` by default. If the audit is not satisfied extendInfo turns true |
 | allAudits| indicates if all audits should be evaluated | `false` |
 | onlyAudits| array of audit keys to evaluate (see below) | `[]` |
+| skipAudits| array of audit keys to be skipped (see below) | `[]` |
 | scores| object of minimum scores per category (see below) to obtain | `{}` |
 
 #### Recommended Options
@@ -67,9 +68,9 @@ skipAudits: [
     "seo"
   ],
   "skipAudits": [
-    "byte-efficiency/uses-responsive-images",
-    "byte-efficiency/uses-webp-images",
-    "seo/meta-description"
+    "uses-responsive-images",
+    "uses-webp-images",
+    "meta-description"
   ],
   "extendedInfo": true
 }
@@ -89,6 +90,7 @@ These are the possible options for the CLI:
 | ------------- | ------------- | ------------- |
 | url | the URL to scan | yes |
 | audits| list of audits that should be evaluated (see below) | no |
+| skip| list of audits that should be skipped (see below) | no |
 | scores| list of minimum scores per category to obtain (see below) | no |
 | showaudits| only show the available audits | no |
 
