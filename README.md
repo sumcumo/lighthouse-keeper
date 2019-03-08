@@ -14,7 +14,7 @@ You need a [Chrome installation](https://developers.google.com/web/updates/2017/
 
 ## Usage
 
-### With JSON Config File
+### With JSON config file
 
 ```bash
 lighthouse-keeper --config path/to/config.json
@@ -34,7 +34,7 @@ These are the possible options for the configuration file:
 | skipAudits| array of audit keys to be skipped (see below) | `[]` |
 | scores| object of minimum scores per category (see below) to obtain | `{}` |
 
-#### Recommended Options
+#### Recommended options
 
 There is a predefined set of options called 'recommended. This looks like this:
 
@@ -78,7 +78,7 @@ skipAudits: [
 
 ([Reasoning behind this sample config.](https://meiert.com/en/blog/lighthouse-config/))
 
-### Without Config File
+### Without config file
 
 ```bash
 lighthouse-keeper --url https://www.example.com --audits accesskeys,uses-http2 --scores seo:90,best-practices:10
