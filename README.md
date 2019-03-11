@@ -14,7 +14,7 @@ You need a [Chrome installation](https://developers.google.com/web/updates/2017/
 
 ## Usage
 
-### With JSON Config File
+### With JSON config file
 
 ```bash
 lighthouse-keeper --config path/to/config.json
@@ -34,7 +34,7 @@ These are the possible options for the configuration file:
 | skipAudits| array of audit keys to be skipped (see below) | `[]` |
 | scores| object of minimum scores per category (see below) to obtain | `{}` |
 
-#### Recommended Options
+#### Recommended options
 
 There is a predefined set of options called 'recommended. This looks like this:
 
@@ -78,7 +78,7 @@ skipAudits: [
 
 ([Reasoning behind this sample config.](https://meiert.com/en/blog/lighthouse-config/))
 
-### Without Config File
+### Without config file
 
 ```bash
 lighthouse-keeper --url https://www.example.com --audits accesskeys,uses-http2 --scores seo:90,best-practices:10
@@ -127,3 +127,7 @@ Licensed under the Apache License, Version 2.0 (the “License”); you may not 
     http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+----
+
+[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too (Hamburg and Düsseldorf)!
