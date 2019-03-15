@@ -42,7 +42,7 @@ There is a predefined set of options called 'recommended. This looks like this:
 skipAudits: [
   "uses-webp-images",
   "hreflang",
-  "webapp-install-banner",
+  "installable-manifest",
   "without-javascript",
 ]
 ```
