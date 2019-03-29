@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/sumcumo/lighthouse-keeper.svg?style=svg)](https://circleci.com/gh/sumcumo/lighthouse-keeper)
+
 # Lighthouse Keeper
 
 Lighthouse Keeper makes it easier to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
