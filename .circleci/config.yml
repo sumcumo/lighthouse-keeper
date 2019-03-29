@@ -1,30 +1,95 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:10.6
+
 jobs:
-  build:
-
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:10.6
-
-    working_directory: ~/repo
-
+  checkout-code:
+    <<: *defaults
     steps:
       - checkout
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - ./
+      - save_cache:
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/repo
 
-      # Download and cache dependencies
+  npm:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
+            - v1-npm-{{ checksum "package-lock.json" }}
+            - v1-npm-
       - run: npm ci
-
-      - save_cache:
+      - persist_to_workspace:
+          root: ~/repo
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - save_cache:
+          key: v1-npm-{{ checksum "package-lock.json" }}
+          paths:
+            - ~/repo/node_modules
 
+  audit:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: npm audit
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
       - run: npm run lint
 
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
       - run: npm run build
+
+workflows:
+  version: 2
+  check:
+    triggers:
+      - schedule:
+          cron: "0 20 * * *"
+          filters:
+            branches:
+              only: master
+    jobs:
+      - checkout-code
+      - npm:
+          requires:
+            - checkout-code
+      - audit:
+          requires:
+            - npm
+
+  main:
+    jobs:
+      - checkout-code
+      - npm:
+          requires:
+            - checkout-code
+      - audit:
+          requires:
+            - npm
+      - lint:
+          requires:
+            - npm
+      - build:
+          requires:
+            - lint
+            - audit
