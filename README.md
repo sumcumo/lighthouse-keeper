@@ -122,7 +122,7 @@ Please have in mind that there are audits like `screenshot-thumbnails` which can
 
 ## License
 
-Copyright 2018 [sum.cumo GmbH](https://www.sumcumo.com/)
+Copyright 2019 [sum.cumo GmbH](https://www.sumcumo.com/)
 
 Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
