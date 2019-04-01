@@ -132,4 +132,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ----
 
-[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too (Hamburg and Düsseldorf)!
+[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too!
