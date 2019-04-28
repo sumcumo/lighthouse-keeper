@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/sumcumo/lighthouse-keeper.svg?style=svg)](https://circleci.com/gh/sumcumo/lighthouse-keeper)
+
 # Lighthouse Keeper
 
 Lighthouse Keeper makes it easier to run specific [Lighthouse](https://github.com/GoogleChrome/lighthouse) audits on a set of URLs.
@@ -130,4 +132,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ----
 
-[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too (Hamburg and Düsseldorf)!
+[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too!
