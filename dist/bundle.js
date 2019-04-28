@@ -9,15 +9,14 @@ var recommendedOptions = {
   ],
 };
 
-const fs = require('fs');
+const path = require('path');
 const { argv } = require('yargs');
 
 const getConfig = () => {
   const configFile = argv.config;
   let options = {};
   if (configFile) {
-    const data = fs.readFileSync(configFile, 'utf8');
-    const parsedOptions = JSON.parse(data);
+    const parsedOptions = require(path.resolve(process.cwd(), configFile));
 
     options = {
       ...parsedOptions,
