@@ -16,10 +16,10 @@ You need a [Chrome installation](https://developers.google.com/web/updates/2017/
 
 ## Usage
 
-### With JSON config file
+### With JSON or JS config file
 
 ```bash
-lighthouse-keeper --config path/to/config.json
+lighthouse-keeper --config path/to/config.js[on]
 ```
 
 #### Options
