@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/sumcumo/lighthouse-keeper/compare/v1.1.2...v2.1.0) (2019-04-30)
+
+
+### Features
+
+* add note about sum.cumo and open source work ([18bc095](https://github.com/sumcumo/lighthouse-keeper/commit/18bc095))
+* **config:** add option to provide a js fil ([97d191d](https://github.com/sumcumo/lighthouse-keeper/commit/97d191d))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/sumcumo/lighthouse-keeper/compare/v1.1.0...v1.1.2) (2019-03-07)
 
