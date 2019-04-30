@@ -1,6 +1,6 @@
 {
   "name": "@sum.cumo/lighthouse-keeper",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "CLI tool for running Google’s Lighthouse checks",
   "main": "lib/main.js",
   "bin": {

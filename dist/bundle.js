@@ -16,6 +16,7 @@ const getConfig = () => {
   const configFile = argv.config;
   let options = {};
   if (configFile) {
+    // eslint-disable-next-line
     const parsedOptions = require(path.resolve(process.cwd(), configFile));
 
     options = {
