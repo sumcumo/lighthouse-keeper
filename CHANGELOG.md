@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/sumcumo/lighthouse-keeper/compare/v2.1.0...v2.1.1) (2019-05-06)
+
+
+### Bug Fixes
+
+* **recommended:** change audit name 'webapp-install-banner' ([206c8d8](https://github.com/sumcumo/lighthouse-keeper/commit/206c8d8))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/sumcumo/lighthouse-keeper/compare/v1.1.2...v2.1.0) (2019-04-30)
 
