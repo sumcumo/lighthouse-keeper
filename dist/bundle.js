@@ -4,7 +4,7 @@ var recommendedOptions = {
   skipAudits: [
     'uses-webp-images',
     'hreflang',
-    'webapp-install-banner',
+    'installable-manifest',
     'without-javascript',
   ],
 };
