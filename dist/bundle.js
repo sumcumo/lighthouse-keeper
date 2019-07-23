@@ -4,20 +4,20 @@ var recommendedOptions = {
   skipAudits: [
     'uses-webp-images',
     'hreflang',
-    'webapp-install-banner',
+    'installable-manifest',
     'without-javascript',
   ],
 };
 
-const fs = require('fs');
+const path = require('path');
 const { argv } = require('yargs');
 
 const getConfig = () => {
   const configFile = argv.config;
   let options = {};
   if (configFile) {
-    const data = fs.readFileSync(configFile, 'utf8');
-    const parsedOptions = JSON.parse(data);
+    // eslint-disable-next-line
+    const parsedOptions = require(path.resolve(process.cwd(), configFile));
 
     options = {
       ...parsedOptions,
@@ -147,7 +147,7 @@ const validateCategories = (categories, options) => {
 const auditPassedStatus = (audit) => {
   switch (audit.scoreDisplayMode) {
     case 'manual':
-    case 'not-applicable':
+    case 'notApplicable':
     case 'informative':
       return 2
     case 'error':
@@ -216,6 +216,7 @@ const run = async (url, config = null) => {
 const chalk$1 = require('chalk');
 const figures = require('figures');
 const Table = require('easy-table');
+const lighthousePackage = require('lighthouse/package.json');
 
 async function scan(url, options) {
   let hasFailures = false;
@@ -351,7 +352,7 @@ module.exports = async () => {
   let hasFailures = false;
 
   const symbol = chalk$1.bold.red(figures.pointer.repeat(3));
-  const scanning = chalk$1.white('Running Lighthouse on');
+  const scanning = chalk$1.white(`Running Lighthouse v${lighthousePackage.version} on`);
 
   for (let index = 0; index < options.urls.length; index += 1) {
     const url = options.urls[index];

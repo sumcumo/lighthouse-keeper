@@ -16,10 +16,10 @@ You need a [Chrome installation](https://developers.google.com/web/updates/2017/
 
 ## Usage
 
-### With JSON config file
+### With JSON or JS config file
 
 ```bash
-lighthouse-keeper --config path/to/config.json
+lighthouse-keeper --config path/to/config.js[on]
 ```
 
 #### Options
@@ -44,7 +44,7 @@ There is a predefined set of options called 'recommended. This looks like this:
 skipAudits: [
   "uses-webp-images",
   "hreflang",
-  "webapp-install-banner",
+  "installable-manifest",
   "without-javascript",
 ]
 ```
@@ -132,4 +132,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ----
 
-[Learn more about sum.cumo](https://www.sumcumo.com/en/) or [work on open source projects](https://www.sumcumo.com/jobs/), too!
+[Learn more about sum.cumo](https://www.sumcumo.com/en) and [work on open source projects](https://www.sumcumo.com/jobs), too!
