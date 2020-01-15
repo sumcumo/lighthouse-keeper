@@ -1,7 +1,7 @@
 module.exports = {
   extends: 'recommended',
   urls: [
-    'https://www.example.com/',
+    'https://www.sumcumo.com/',
   ],
   scores: {
     performance: 90,
@@ -9,10 +9,6 @@ module.exports = {
     'best-practices': 90,
     seo: 80,
   },
-  skipAudits: [
-    'uses-responsive-images',
-    'uses-webp-images',
-    'meta-description',
-  ],
-  extendedInfo: true,
+  extendedInfo: false,
+  auditPassThreshold: 0.9,
 }

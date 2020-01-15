@@ -73,6 +73,7 @@ const prepareOptions = () => {
     allAudits: false,
     onlyAudits: [],
     skipAudits: [],
+    auditPassThreshold: 0.75,
   };
 
   const keys = Object.keys(preparedOptions);
@@ -144,7 +145,7 @@ const validateCategories = (categories, options) => {
  *  1 => passed
  *  2 => not applicable
  */
-const auditPassedStatus = (audit) => {
+const auditPassedStatus = (audit, options) => {
   switch (audit.scoreDisplayMode) {
     case 'manual':
     case 'notApplicable':
@@ -155,7 +156,7 @@ const auditPassedStatus = (audit) => {
     case 'numeric':
     case 'binary':
     default:
-      return Number(audit.score) >= 0.75 ? 1 : 0
+      return Number(audit.score) >= options.auditPassThreshold ? 1 : 0
   }
 };
 
@@ -302,7 +303,7 @@ async function scan(url, options) {
       subHeadline(`${category.title}`);
       auditRefs.forEach((auditRef) => {
         const audit = results.audits[auditRef.id];
-        const passedStatus = auditPassedStatus(audit);
+        const passedStatus = auditPassedStatus(audit, options);
         let hasFailure = false;
 
         let result;
