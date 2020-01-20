@@ -35,6 +35,7 @@ These are the possible options for the configuration file:
 | onlyAudits| array of audit keys to evaluate (see below) | `[]` |
 | skipAudits| array of audit keys to be skipped (see below) | `[]` |
 | scores| object of minimum scores per category (see below) to obtain | `{}` |
+| auditPassThreshold| Threshold of the score to pass an audit (0 - 1) | `0.75` |
 
 #### Recommended options
 
