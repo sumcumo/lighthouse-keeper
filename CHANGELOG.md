@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/sumcumo/lighthouse-keeper/compare/v2.1.5...v2.2.0) (2020-01-20)
+
+
+### Features
+
+* **options:** add auditPassThreshold ([74e5855](https://github.com/sumcumo/lighthouse-keeper/commit/74e5855))
+
+
+
 <a name="2.1.5"></a>
 ## [2.1.5](https://github.com/sumcumo/lighthouse-keeper/compare/v2.1.4...v2.1.5) (2020-01-20)
 
