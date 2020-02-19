@@ -4,4 +4,5 @@ export default {
     file: 'dist/bundle.js',
     format: 'cjs',
   },
+  external: ['chrome-launcher', 'lighthouse'],
 }
