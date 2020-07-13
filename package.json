@@ -34,7 +34,7 @@
     "prettier": "1.17.0",
     "prettier-eslint": "8.8.2",
     "rollup": "1.25.2",
-    "standard-version": "5.0.2"
+    "standard-version": "8.0.1"
   },
   "dependencies": {
     "chalk": "2.4.2",
