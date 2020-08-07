@@ -41,7 +41,7 @@
     "chrome-launcher": "0.13.4",
     "easy-table": "1.1.1",
     "figures": "3.2.0",
-    "lighthouse": "6.1.1",
+    "lighthouse": "6.2.0",
     "prettyjson": "1.2.1",
     "yargs": "15.4.1"
   }
