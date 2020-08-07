@@ -1,6 +1,18 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [3.0.0](https://github.com/sumcumo/lighthouse-keeper/compare/v2.2.1...v3.0.0) (2020-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **project:** bumb lighthouse major version
+
+### Features
+
+* **project:** breaking-change update node version ([cfa8460](https://github.com/sumcumo/lighthouse-keeper/commit/cfa8460d48325a266d9b14e79f0e06a2f6c5cce4))
+* **project:** update all packages ([3cd1e9d](https://github.com/sumcumo/lighthouse-keeper/commit/3cd1e9d6c888c6dc9a1d1012502e864805412b8e))
 
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/sumcumo/lighthouse-keeper/compare/v2.2.0...v2.2.1) (2020-02-19)
