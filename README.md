@@ -1,3 +1,5 @@
+# ⚠️ This package is no longer under active development. We recommend using [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci).
+
 [![CircleCI](https://circleci.com/gh/sumcumo/lighthouse-keeper.svg?style=svg)](https://circleci.com/gh/sumcumo/lighthouse-keeper)
 
 # Lighthouse Keeper
